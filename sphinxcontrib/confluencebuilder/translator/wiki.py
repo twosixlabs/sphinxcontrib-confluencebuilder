@@ -928,10 +928,10 @@ class ConfluenceWikiTranslator(ConfluenceTranslator):
         self.add_text('_')
 
     def visit_literal(self, node):
-        self.add_text('{{')
+        self.add_text('{{{noformat}')
 
     def depart_literal(self, node):
-        self.add_text('}}')
+        self.add_text('{noformat}}}')
 
     def visit_subscript(self, node):
         self.add_text('_')
